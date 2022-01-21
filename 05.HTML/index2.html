@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html long="ru">
+    <head>
+        <title>Домашнее задание 4.1</title>
+        <meta charset="UTF-8">
+
+    </head>
+    <body>
+        <h1 align="center">Заполните анкету</h1>
+        <form action="http://fe.it-academy.by/TestForm.php" method="get">
+        <fieldset>
+            <legend>Личные данные</legend>
+            <input type="text" name="lastname" pattern="^[А-Яа-яЁё]+$" maxlength="25" required autofocus placeholder="Фамилия"><br>
+            <input type="text" name="username" pattern="^[А-Яа-яЁё]+$" maxlength="20" required  placeholder="Имя"><br>
+            <input type="text" name="lastname2" pattern="^[А-Яа-яЁё]+$" maxlength="24" required  placeholder="Отчество">
+            <fieldset>
+                <legend>Паспортные данные</legend>
+                <label for="pr1">Серия-только две заглавные латинские буквы</label><br>
+                <label for="pr2">Номер паспорта- только семь цифр</label><br>
+                <input  type="text" id="pr1" name="series" required pattern="[A-Z]{2}" placeholder="AA">
+                <input  type="text" id ="pr2" name="pasnumber" required pattern="[1-9]{7}" placeholder="1234567">
+             
+            </fieldset>
+            <fieldset>
+                <legend>Дата рождения</legend>
+                <label><input  type="text" name="year" pattern="[1-9]{4}" placeholder="2000">Год рождения 4 циферы</label><br>
+                <select name="month" id="pr3"> 
+                    <option value="january">январь</option>
+                    <option value="february">февраль</option>
+                    <option value="march">март</option>
+                    <option value="april">апрель</option>
+                    <option value="may">май</option>
+                    <option value="june">июнь</option>
+                    <option value="july">июль</option>
+                    <option value="august">август</option>
+                    <option value="september">сентябрь</option>
+                    <option value="oktober">октябрь</option>
+                    <option value="november">ноябрь</option>
+                    <option value="december">декабрь</option>
+                </select>
+             <label for="pr3">Выберите месяц рождения</label><br>
+             <label><input type="number" min="1" max="31" step="1">Выберите дату</label>
+            </fieldset>
+                <label><select name="nationality">
+                    <option value="nationality1">РБ</option>
+                    <option value="nationality2">РФ</option>
+                    <option value="nationality3">США</option>
+                </select>Какой Вы национальности</label><br>
+                <label>Адрес:<br>
+                    <textarea name="adress"></textarea>
+                </label>
+
+            </fieldset>
+            <fieldset>
+                <legend>Интересы</legend>
+                <fieldset>
+                    <legend>Хобби</legend>
+                    <label><input type="checkbox" name="fishing" value="yes">Рыбалка</label><br>
+                    <label><input type="checkbox" name="astro" value="yes">Астрономия</label><br>
+                    <label><input type="checkbox" name="diving" value="yes">Дайвинг</label><br>
+                    <label><input type="checkbox" name="marki" value="yes">Марки</label><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Домашния животные</legend>
+                    <select name="Animals" multiple size="12">
+                        <optgroup label="Попугаи">
+                            <option value="pop1">Волнистый</option>
+                            <option value="pop2">Ара</option>
+                            <option value="pop3">Неразлучник</option>
+                        </optgroup>
+                        <optgroup label="Рыба">
+                            <option value="karas">Караси</option>
+                            <option value="okun">Окуни</option>
+                            <option value="osetr">Осетр</option>
+                        </optgroup>
+                        <optgroup label="Птицы">
+                            <option value="vorona">Вороны</option>
+                            <option value="aist">Аисты</option>
+                            <option value="ptero">Птеродактели</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
+            </fieldset>
+            <fieldset>
+                <legend>Данные для входа и восстановления пароля</legend>
+                <label><input type="text" name="login" pattern="^[A-Za-z]+$" min="5" max="20" required placeholder="Логин">Только латиница,не меньше 5 символов</label><br>
+                <label><input type="password" name="userpass" pattern="^[A-Za-z]+$" min="10" max="20" autocomplete="off" required placeholder="Пароль">Только латиница,не меньше 10 символов</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Координаты</legend>
+                <label><input type="email" name="usermail" placeholder="Введите адрес почты" pattern="^((([0-9A-Za-z]{1}[-0-9A-z\.]{0,30}[0-9A-Za-z]?)|([0-9А-Яа-я]{1}[-0-9А-я\.]{0,30}[0-9А-Яа-я]?))@([-A-Za-z]{1,}\.){1,}[-A-Za-z]{2,})$">Проверка при помощи новых атрибутов</label><br>
+                <label><input type="url" name="userurl" placeholder="Введите адрес сайта" pattern="$mod = preg_replace("([^a-z0-9\_\-])", '', $mod);">Проверка при помощи новых атрибутов</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Цифры</legend>
+                <label><input type="number" name="nam" value="-2.5" min="-2.5" max="2.5" step="0.1">максимальное 2,5 с шагом 0.1</label><br>
+                <label><input type="range" name="run" min="1" max="10">максимальное 10</label>
+            </fieldset>
+            <fieldset>
+                <legend>Кнопки управления</legend>
+                <input type="submit" name="send" value="Отправить">
+                <input type="reset" name="res" value="Сброс"><br>
+                <button><img src="email_14733.png" width="40"></button>
+            </fieldset>
+            
+        </form>
+    </body>
