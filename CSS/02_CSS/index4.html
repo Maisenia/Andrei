@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Домашнее задание Списки</title>
+        <meta charset="UTF-8">
+        <style>
+            .container1{
+                width: 350px;  overflow-x: scroll;
+            }
+            .container2{
+                width: 400px; height: 60px; background-color: black; color: green; overflow: auto; white-space: pre-line;
+            }
+           ul{
+               list-style-type: upper-roman; font-weight: 700;
+           } 
+           li ul{
+               list-style-type: lower-roman; font-weight: 300; white-space: nowrap;
+           }
+        </style>
+    </head>
+    <body>
+    <div class="container1">
+       <ul>
+           <li>Контейнер с кодом
+               <ul>
+                    <li>Цвет фона черный</li>
+                    <li>Цвет текста зеленый</li>
+                    <li>Ширина:400px</li>
+                    <li>Максимальная высота контейнера:4-е строки</li>
+                    <li>Переполнение:автоматическое</li>
+               </ul>
+            </li>   
+       </ul>
+       <ul>
+           <li value="2">Список
+               <ul>
+                    <li>Ширина 350px</li>
+                    <li>Тип списка: римские цифры</li>
+                    <li>Тип вложенного списка:римские нижний регистр цифры</li>
+               </ul>
+            </li>
+       </ul>
+        <div class="container2">
+            #!/usr/bin/env pithon
+            print 'Hello. I am a python program.'
+            name = raw input("Whot is your name&")
+            print "Hello there," + name + "!"
+            #!/usr/bin/env pithon
+            print 'Hello. I am a python program.'
+            name = raw input("Whot is your name&")
+            print "Hello there," + name + "!"
+        </div>
+    </div>
+   
+            
+       
+    </body>
+</html>

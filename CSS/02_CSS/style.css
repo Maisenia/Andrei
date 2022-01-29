@@ -1,0 +1,15 @@
+h4{
+    text-align: right;
+}
+.p1{
+    text-align: right; white-space: pre;
+}
+span{
+    font-style: italic;
+}
+.p2{
+    text-decoration: underline; font-weight: bold; font-family: 'Comforter', cursive; text-indent: 30px;
+}
+.p3{
+    text-align: justify; text-indent: 30px; font: italic normal 300 small 'Roboto', sans-serif; line-height: 30px;
+}
