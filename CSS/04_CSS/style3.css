@@ -1,0 +1,17 @@
+@charset "UTF-8";
+table{
+    border-collapse: collapse;
+}
+
+td, tr{
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;  
+}
+tr:nth-child(odd) td:nth-child(odd){
+    background:black;
+}
+tr:nth-child(even) td:nth-child(even){
+    background:black;
+}
+

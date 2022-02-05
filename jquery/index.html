@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Домашнее задание 04</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css" media="screen">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <table>
+            <caption>ДАННЫЕ О СОТРУДНИКАХ</caption>
+            <thead>
+                <tr>
+                    <th>ФИО</th><th>пол</th><th>должность</th><th>дата рож.</th><th>Данные 01</th><th>Данные 02</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Иванов Иван Иванович</th><td>М</td><td>начальник</td><td>01.011960</td><td>4567</td><td>3453</td>
+                </tr>
+                <tr>
+                    <th>Петрова Илона Петровна</th><td>Ж</td><td>секретарь</td><td>01.01.1989</td><td>98795</td><td>46523</td>
+                </tr>
+                <tr>
+                    <th>Сидоров Илья Игоревич</th><td>М</td><td>бухгалтер</td><td>01.01.1979</td><td>743434</td><td>987979</td>
+                </tr>
+                <tr>
+                    <th>Пупкин Федор Федорович</th><td>М</td><td>водитель</td><td>01.01.1926</td><td>74323434</td><td>9232379</td>
+                </tr>
+                <tr>
+                    <th>Крупин Сергей Иванович</th><td>М</td><td>водитель2</td><td>01.01.1959</td><td>3234534</td><td>923123379</td>
+                </tr>
+        </tbody>
+        </table>
+        <button>Кнопка</button>
+
+
+        <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script> 
+        <script>
+            $(document).ready(function($){
+                
+                // $("button").on("click", function(){
+                //     $("tr:first").css("backgroundColor", "green")
+                // })
+                    
+
+                    $("thead>tr").on("click",  function(){
+                        $("thead>tr").animate({opacity: "hide"}, 2000)
+                    })
+                    $("tbody tr:nth-child(1)").on("click",  function(){
+                        $("tbody tr:nth-child(1)").hide()
+                    })
+
+                    $("tbody tr:nth-child(2)").on("click",  function(){
+                        $("tbody tr:nth-child(2)").hide()
+                    })
+                    $("tbody tr:nth-child(3)").on("click",  function(){
+                        $("tbody tr:nth-child(3)").hide()
+                    })
+                    $("tbody tr:nth-child(4)").on("click",  function(){
+                        $("tbody tr:nth-child(4)").hide()
+                    })
+                    $("tbody tr:nth-child(5)").on("click",  function(){
+                        $("tbody tr:nth-child(5)").animate({opacity: "hide"}, 2000 )
+                    })
+                    $("button").on("click", function(){
+                    $("tr").show()
+                })
+                   
+                    
+               
+            });
+        </script>
+    </body>
+</html>

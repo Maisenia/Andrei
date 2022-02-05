@@ -1,0 +1,146 @@
+@charset "UTF-8";
+.menu *{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-image: url(img/1579860592_11.jpg);
+}
+header{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+}
+.menu ul{
+    list-style: none;
+    
+}
+.menu >ul{
+    display: flex;
+    justify-content: center;
+   
+}
+.menu > ul li a{
+    display: block;
+    background: brown;
+    padding: 15px 30px 15px 40px;
+    font-size: 16px;
+    color: chartreuse;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;   
+}
+.menu > ul li{
+    position: relative;
+    border-right: 1px solid black;
+}
+.menu > ul li:first-child{
+    border-left: 1px solid black;
+}
+.menu > ul li:last-child{
+    border-right: 1px solid black;
+}
+.menu li a:hover{
+    background:blue;
+    color: black;
+    text-shadow: 1px 5px 10px -5px black;
+    transition: all 0.3s ease;   
+}
+/*sub menu*/
+
+.menu li ul{
+   position: absolute;
+   min-width: 100%;
+   display: none; 
+    
+}
+.menu li > ul li{
+    border: 1px solid black;
+    
+}
+.menu li > ul li a{
+    padding: 10px;
+    text-transform: none;
+    background: darkolivegreen;
+}
+.menu li > ul li ul{
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+.menu li:hover >ul{
+    display: block;
+}
+
+    @media all and (max-width: 824px ){
+    .menu *{
+        margin:0;
+        padding: 0;
+    }
+    body{
+        background-image: url(img/1579860592_11.jpg);
+    }
+    header{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0px;
+    }
+    .menu ul{
+        list-style: none;
+    }
+    .menu >ul{
+        display: flex;
+        flex-direction: column;    
+
+    }
+    .menu > ul li a{
+        display:block;
+        background: brown;
+        padding: 15px 30px 15px 40px;
+        font-size: 16px;
+        color: chartreuse;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+        
+    }
+    .menu > ul li{
+        position: relative;
+        border-right: 1px solid black;
+    }
+    .menu > ul li:first-child{
+        border-left: 1px solid black;
+    }
+    .menu > ul li:last-child{
+        border-right: 1px solid black;
+    }
+    .menu li a:hover{
+        background:blue;
+        color: black;
+        text-shadow: 1px 5px 10px -5px black;
+        transition: all 0.3s ease;   
+    }
+    /*sub menu*/
+    
+    .menu li ul{
+       position: absolute;
+       min-width: 100%;
+       display: none; 
+       left: 100%;
+    }
+    .menu li > ul li{
+        border: 1px solid black;
+        
+    }
+    .menu li > ul li a{
+        padding: 10px;
+        text-transform: none;
+        background: darkolivegreen;
+    }
+    .menu li > ul li ul{
+        position: absolute;
+        left: 100%;
+        top: 0;
+    }
+    .menu li:hover >ul{
+        display: block;
+    }  
+}

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+h1~div{
+    width: 40%;
+    text-indent: 20px;
+    text-align: justify;
+    border: 1px solid gray;
+    border-radius: 0 10px 0 10px;
+}
+a[href$=".doc"]::before{
+    content: url(img/st.png);
+}
+.p{
+    background: url(img/pdf.png) no-repeat; background-position: right center; padding: 16px;
+}
+a[href="http://google.com"]{
+    background: url(img/rar.gif) no-repeat; background-position: right center; padding: 16px;
+}
+.doc a:hover{
+   color: red;
+}
+
+.pdf a:hover{
+    color: coral;
+}
+
+.zip a:hover{
+    color: green;
+}
+ul{
+    list-style-image: url(img/pap.jpeg);
+    position: absolute;
+}
+li a img{
+    display: none; 
+}
+a:hover img{
+    display: inline-block;
+    position: relative;
+    
+}

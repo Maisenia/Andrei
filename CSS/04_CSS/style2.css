@@ -1,0 +1,27 @@
+@charset "UTF-8";
+table{
+    border-collapse: separate;
+}
+thead>tr{
+    background-color: greenyellow;
+}
+td,th{
+    border: 2px dotted gray;
+    border-top-width:  0px;
+    border-right: 0px;
+}
+th{
+    border-left: 0px;
+}
+tbody tr:nth-child(even){
+    background-color: gray;
+}
+tbody tr:hover{
+    background: red;
+    color: white;
+}
+
+caption{
+    caption-side: bottom;
+}
+

@@ -1,0 +1,167 @@
+@charset "UTF-8";
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: lightcoral;
+    text-align: center;
+    outline: 15px double green;
+}
+
+.menu li{
+    display:inline-block;
+    position: relative;
+    background:brown;
+    list-style: none;
+    width: 150px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 16px;
+}
+.menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: cornsilk;
+    display: block;
+    text-align: center;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    transition: all .5s;
+    
+} 
+.menu a:hover{
+    background: chartreuse;
+    color: darkblue;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.menu ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    padding: 0;
+}
+.menu li:hover ul{
+    display: block;
+}
+.foto{
+    background-color: grey;
+    float: left;
+    width: 15em;
+    min-height: 600px;
+    margin-top: 15px;
+}
+.info{
+    background-color: grey;
+    margin-top: 15px;
+    margin-left: 242px;
+    width: 83em;
+    height: 182px;
+}
+.info2{
+    background-color: grey;
+    margin-top: 2px;
+    margin-left: 242px;
+    height: 418px;
+    width: 83em;
+}
+.footer{
+    width: 63em;
+    background-color: grey;
+    height: 40px;
+    margin-top: 2px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800;
+    background-image: url(img/1_result.png); background-repeat: no-repeat; background-position: left bottom;
+}   
+.clear2{
+ /*   height: 10px;
+    background-color: black;*/
+    clear: left;
+}
+    @media all and (max-width: 1008px ){
+    .header{
+        width: 100%;
+        height: 80px;
+        background-color: lightcoral;
+        text-align: center;
+        outline: 15px double green;
+    }
+    
+    .menu li{
+        display: block;
+        position: relative;
+        background:brown;
+        list-style: none;
+        width: 150px;
+        border: 2px solid black;
+        border-radius: 20px;
+        margin-top: 16px;
+    }
+    .menu a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: cornsilk;
+        display: block;
+        text-align: center;
+        padding: 0 10px;
+        height: 40px;
+        line-height: 40px;
+        transition: all .5s;
+        
+    } 
+    .menu a:hover{
+        background: chartreuse;
+        color: darkblue;
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+    .menu ul{
+        position: absolute;
+        left: 100%;
+        top: 0;
+        display: none;
+        padding: 0;
+    }
+    .menu li:hover ul{
+        display: block;
+    }
+    .foto{
+        background-color: grey;
+        float: left;
+        width: 15em;
+        min-height: 600px;
+        margin-top: 15px;
+    }
+    .info{
+        background-color: grey;
+        margin-top: 15px;
+        margin-left: 242px;
+        width: 83em;
+        height: 182px;
+    }
+    .info2{
+        background-color: grey;
+        margin-top: 2px;
+        margin-left: 242px;
+        height: 418px;
+        width: 83em;
+    }
+    .footer{
+        width: 63em;
+        background-color: grey;
+        height: 40px;
+        margin-top: 2px;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 800;
+        background-image: url(img/1_result.png); background-repeat: no-repeat; background-position: left bottom;
+    }   
+    .clear2{
+     /*   height: 10px;
+        background-color: black;*/
+        clear: left;
+    }   
+}    
