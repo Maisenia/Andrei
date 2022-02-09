@@ -7,14 +7,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <table>
+        <table class="tabl">
             <caption>ДАННЫЕ О СОТРУДНИКАХ</caption>
-            <thead>
+                <thead>           
                 <tr>
                     <th>ФИО</th><th>пол</th><th>должность</th><th>дата рож.</th><th>Данные 01</th><th>Данные 02</th>
                 </tr>
-            </thead>
-            <tbody>
+                </thead> 
+                <tbody>
                 <tr>
                     <th>Иванов Иван Иванович</th><td>М</td><td>начальник</td><td>01.011960</td><td>4567</td><td>3453</td>
                 </tr>
@@ -30,9 +30,11 @@
                 <tr>
                     <th>Крупин Сергей Иванович</th><td>М</td><td>водитель2</td><td>01.01.1959</td><td>3234534</td><td>923123379</td>
                 </tr>
-        </tbody>
+                </tbody>
         </table>
-        <button>Кнопка</button>
+        <button>Кнопка</button><br><br>
+        
+        <input type="password" name="pass" placeholder="Введите пароль">
 
 
         <script
@@ -47,30 +49,35 @@
                 // })
                     
 
-                    $("thead>tr").on("click",  function(){
-                        $("thead>tr").animate({opacity: "hide"}, 2000)
-                    })
-                    $("tbody tr:nth-child(1)").on("click",  function(){
-                        $("tbody tr:nth-child(1)").hide()
-                    })
+                //     $("thead>tr").on("click",  function(){
+                //         $("thead>tr").animate({opacity: "hide"}, 2000)
+                //     })
+                //     $("tbody tr:nth-child(1)").on("click",  function(){
+                //         $("tbody tr:nth-child(1)").hide()
+                //     })
 
-                    $("tbody tr:nth-child(2)").on("click",  function(){
-                        $("tbody tr:nth-child(2)").hide()
-                    })
-                    $("tbody tr:nth-child(3)").on("click",  function(){
-                        $("tbody tr:nth-child(3)").hide()
-                    })
-                    $("tbody tr:nth-child(4)").on("click",  function(){
-                        $("tbody tr:nth-child(4)").hide()
-                    })
-                    $("tbody tr:nth-child(5)").on("click",  function(){
-                        $("tbody tr:nth-child(5)").animate({opacity: "hide"}, 2000 )
-                    })
-                    $("button").on("click", function(){
+                //     $("tbody tr:nth-child(2)").on("click",  function(){
+                //         $("tbody tr:nth-child(2)").hide()
+                //     })
+                //     $("tbody tr:nth-child(3)").on("click",  function(){
+                //         $("tbody tr:nth-child(3)").hide()
+                //     })
+                //     $("tbody tr:nth-child(4)").on("click",  function(){
+                //         $("tbody tr:nth-child(4)").hide()
+                //     })
+                //     $("tbody tr:nth-child(5)").on("click",  function(){
+                //         $("tbody tr:nth-child(5)").animate({opacity: "hide"}, 2000 )
+                //     })
+                //     $("button").on("click", function(){
+                //     $("tr").show()
+                // })
+                   
+                  $(".tabl tr").click(function(){
+                      $(this).hide();
+                  })  
+                  $("button").on("click", function(){
                     $("tr").show()
                 })
-                   
-                    
                
             });
         </script>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Домашнее задание 04</title>
+        <meta charset="UTF-8">
+        <style>
+            input[type=submit]{
+                background-color: blue;
+                color: antiquewhite;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <form action="http://fe.it-academy.by/TestForm.php" method="get">
+            <fieldset>
+                
+                <label><input type="password" name="userpass" value="" required id="userpass"><sup>&lowast;</sup>Пароль</label><br>
+                <label><input type="password" name="checkpass" value="" required id="checkpass"><sup>&lowast;</sup>Повторите пароль</label><br><br>
+                <input type="submit" name="send" value="Отправить"><br>
+                <sup>&lowast;</sup>-обязательное поле
+            </fieldset>
+        </form>    
+
+
+
+        <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script> 
+        <script>
+            $(document).ready(function($){
+
+             $("#userpass").keypress(function(){
+                 $("#userpass, #checkpass").css("backgroundColor","green")
+
+             });
+                
+            $("#checkpass").on("keyup", function(){
+            if ($("#checkpass").val() == $("#userpass").val())
+            {$("#userpass, #checkpass").css("backgroundColor","green");}
+            else $("#userpass, #checkpass").css("backgroundColor","red");
+            })
+            
+           
+                 
+               
+            });
+        </script>
+    </body>
+</html>
+
